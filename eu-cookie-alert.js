@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 	var domain = window.location.host;
 	if (navigator.cookieEnabled && $.cookie('ap_eucookiealert') != domain) {
 		var cookieAlert = $('<div>');
-		var cookieMessage = $('<p>').html('This website accepts cookies. Please read our privacy policy for more information.');
+		var cookieMessage = $('<p>').html('This website uses cookies. Please read our privacy policy for more information.');
 		var cookieButton = $('<button>').html('I understand');
 		cookieButton.click(function() {
 			$.cookie('ap_eucookiealert', domain);
