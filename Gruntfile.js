@@ -36,7 +36,9 @@ module.exports = function(grunt) {
 				banner: '/*! <%= pkg.name %> v<%= pkg.version %> | <%= pkg.license %> */\n'
 			},
 			build: {
-				src: 'eu-cookie-alert.js',
+				src: [
+						'jquery-cookie/jquery.cookie.js', 'eu-cookie-alert.js'
+				],
 				dest: 'eu-cookie-alert.min.js'
 			}
 		}
