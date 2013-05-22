@@ -1,0 +1,13 @@
+{
+    "globals": {
+        "module": true,
+        "console": true
+    },
+    "curly": true,
+    "browser": true,
+    "jquery": true,
+    "quotmark": "single",
+    "regexp": true,
+    "undef": true,
+    "trailing": true
+}
