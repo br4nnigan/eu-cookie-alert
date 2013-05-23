@@ -1,7 +1,8 @@
 {
     "globals": {
         "module": true,
-        "console": true
+        "console": true,
+        "eucookiealertconfig": true
     },
     "curly": true,
     "browser": true,
