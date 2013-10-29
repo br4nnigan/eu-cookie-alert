@@ -1,0 +1,23 @@
+{
+  "name": "eu-cookie-alert",
+  "main": "eu-cookie-alert.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/agilepixel/eu-cookie-alert",
+  "authors": [
+    "Richard Brown <richard@agilepixel.io>"
+  ],
+  "description": "Drop in solution for EU cookie alert",
+  "keywords": [
+    "eu",
+    "cookie",
+    "law"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery.cookie": "~1.4.0"
+  }
+}
