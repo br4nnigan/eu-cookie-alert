@@ -15,9 +15,12 @@
   "license": "MIT",
   "ignore": [
     "node_modules",
-    "bower_components"
+    "bower_components",
+    "jquery-cookie",
+    ".gitmodules"
   ],
   "dependencies": {
+    "jquery": "~1",
     "jquery.cookie": "~1.4.0"
   }
 }
