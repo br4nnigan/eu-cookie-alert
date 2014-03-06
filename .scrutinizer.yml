@@ -1,0 +1,5 @@
+filter:
+    excluded_paths:
+        - eu-cookie-alert.min.js
+tools:
+    js_hint: true
