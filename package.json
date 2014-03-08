@@ -1,6 +1,6 @@
 {
   "name": "EU-Cookie-Alert",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Drop in solution for EU cookie alert",
   "main": "eu-cookie-alert.js",
   "repository": {
@@ -12,9 +12,9 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "grunt": "~0.4.0",
-    "grunt-contrib-jshint": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-uglify": "~0.4.0",
     "grunt-contrib-watch": "~0.5.0",
-    "grunt-update-submodules": "~0.2.0"
+    "grunt-update-submodules": "~0.3.0"
   }
 }

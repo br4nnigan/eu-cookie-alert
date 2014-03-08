@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 			},
 			build: {
 				src: [
-						'jquery-cookie/jquery.cookie.js', 'eu-cookie-alert.js'
+						'eu-cookie-alert.js'
 				],
 				dest: 'eu-cookie-alert.min.js'
 			}
@@ -53,7 +53,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-update-submodules');
 
-	grunt.registerTask('default', ['update_submodules', 'jshint', 'uglify']);
+	grunt.registerTask('default', ['jshint', 'uglify']);
 };
