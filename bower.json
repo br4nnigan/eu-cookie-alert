@@ -1,7 +1,7 @@
 {
   "name": "eu-cookie-alert",
-  "main": "eu-cookie-alert.js",
-  "version": "0.1.1",
+  "main": "src/eu-cookie-alert.js",
+  "version": "0.2.0",
   "homepage": "https://github.com/agilepixel/eu-cookie-alert",
   "authors": [
     "Richard Brown <richard@agilepixel.io>"
