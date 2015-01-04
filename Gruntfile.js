@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     fixmyjs: {
       'src/eu-cookie-alert.js': ['src/eu-cookie-alert.js'],
       'Gruntfile.js': ['Gruntfile.js'],
+      'test/test.js': ['test/test.js'],
       options: { config: '.jshintrc' }
     },
     uglify: {
@@ -40,9 +41,7 @@ module.exports = function (grunt) {
         dest: 'dist/eu-cookie-alert.min.js'
       }
     },
-		qunit: {
-			all: ['test/*.html']
-		},
+    qunit: { all: ['test/*.html'] },
     watch: {
       js: {
         files: 'eu-cookie-alert.js',
@@ -58,9 +57,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-qunit');
-
-	grunt.registerTask('test', 'qunit');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.registerTask('test', 'qunit');
   grunt.registerTask('default', [
     'fixmyjs',
     'jshint',
