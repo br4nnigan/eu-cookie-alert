@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>QUnit</title>
+  <title>Eu Cookie Alert</title>
   <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.16.0.css">
   <link rel="stylesheet" href="test.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -12,11 +12,24 @@
 
     <div class="page-header">
       <h1>EU Cookie Alert</h1>
-      <p class="lead">Testing page</p>
+      <p class="lead">Testing and example page</p>
     </div>
 
+    <div class="row">
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary" onClick="euCookieAlert.show();">Trigger Alert</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-warning" onClick="document.cookie = 'eucookiealert=; expires=-1; path=/';">Remove Cookie</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
+    </div>
 
     <h1>HTML Ipsum Presents</h1>
 

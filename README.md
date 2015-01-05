@@ -6,6 +6,8 @@
 
 Display a message on on your website for users to consent to your website using cookies. See http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm for details on why you may want to do this.
 
+##[Example](http://rawgit.com/agilepixel/eu-cookie-alert/master/test/test.html)
+
 Install manually or via Bower: `bower install eu-cookie-alert`.
 
 ## Use
