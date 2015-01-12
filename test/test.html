@@ -29,6 +29,7 @@
     <div class="row">
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
+    <div id="blanket-main"></div>
     </div>
 
     <h1>HTML Ipsum Presents</h1>
@@ -61,8 +62,16 @@
 
 
   </div> <!-- /container -->
-  <script src='../src/eu-cookie-alert.js'></script>
-  <script src="http://code.jquery.com/qunit/qunit-1.16.0.js"></script>
+  <script src='../src/eu-cookie-alert.js' data-cover></script>
+  <script src="../bower_components/qunit/qunit/qunit.js"></script>
+  <script>if (!window.QUnit) { document.write('<script src="//code.jquery.com/qunit/qunit-1.16.0.js"><\/script>'); }</script>
+  <script src="../bower_components/blanket/dist/qunit/blanket.js"></script>
+  <script>
+  if (location.href.match(/(\?|&)gruntReport($|&|=)?/)) {
+    blanket.options("reporter", "../node_modules/grunt-blanket-qunit/reporter/grunt-reporter.js");
+  }
+  </script>
+  <script>if (!window.blanket) { document.write('<script src="//cdnjs.cloudflare.com/ajax/libs/blanket.js/1.1.4/blanket.min.js"><\/script>'); }</script>
   <script src="test.js"></script>
 </body>
 </html>

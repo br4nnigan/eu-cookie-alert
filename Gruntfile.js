@@ -42,6 +42,14 @@ module.exports = function (grunt) {
       }
     },
     qunit: { all: ['test/*.html'] },
+    blanket_qunit: {
+      all: {
+        options: {
+          urls: ['test/test.html?coverage&gruntReport'],
+          threshold: 80
+        }
+      }
+    },
     watch: {
       js: {
         files: 'eu-cookie-alert.js',
@@ -58,7 +66,11 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-qunit');
-  grunt.registerTask('test', 'qunit');
+  grunt.loadNpmTasks('grunt-blanket-qunit');
+  grunt.registerTask('test', [
+    'qunit',
+    'blanket_qunit'
+  ]);
   grunt.registerTask('default', [
     'fixmyjs',
     'jshint',
