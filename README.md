@@ -14,7 +14,7 @@ Install manually or via Bower: `bower install eu-cookie-alert`.
 
 Load the script alongside any other javascript libraries you may be using, and trigger the alert with the following:
 
-    euCookieAlert.start();
+    euCookieAlert.show();
 
 Alternatively use the syntax:
 
