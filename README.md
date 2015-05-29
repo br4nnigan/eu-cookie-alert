@@ -18,7 +18,7 @@ Load the script alongside any other javascript libraries you may be using, and t
 
 Alternatively use the syntax:
 
-    euCookieAlert.start({
+    euCookieAlert.show({
     bodyClass: 'eu-cookie-alert',
     cookieKey: 'eucookiealert',
     cookieValue: 1,
