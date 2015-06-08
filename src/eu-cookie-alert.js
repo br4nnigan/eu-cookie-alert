@@ -51,7 +51,11 @@
         cookieMessage.innerHTML = options.alertMessage;
         cookieButton.innerHTML = options.agreeMessage;
         _addEventListener(cookieButton, 'click', function (event) {
-          event.preventDefault();
+          if (event.preventDefault) {
+            event.preventDefault();
+          } else {
+            event.returnValue = false;
+          }
           document.cookie = cookiekey + '=' + value + ' ; expires=' + cookieexpire + '; path=/';
           cookieAlert.parentNode.removeChild(cookieAlert);
           if (body.classList) {
