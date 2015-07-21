@@ -12,6 +12,7 @@
   var euCookieAlert = function () {
     var defaultOptions = {
       bodyClass: 'eu-cookie-alert',
+      buttonClass: 'eu-cookie-button',
       cookieKey: 'eucookiealert',
       cookieValue: 1,
       alertId: 'eucookiealert',
@@ -28,6 +29,13 @@
         finalOptions[customAttr] = options[customAttr];
       }
       return finalOptions;
+    };
+    var _add_class = function (element, className) {
+      if (element.classList) {
+        element.classList.add(className);
+      } else {
+        element.className += ' ' + className;
+      }
     };
     var _ap_eu_cookie = function (custom) {
       var options = _setup_options(custom);
@@ -67,11 +75,8 @@
         cookieAlert.appendChild(cookieMessage);
         cookieMessage.appendChild(cookieButton);
         body.appendChild(cookieAlert);
-        if (body.classList) {
-          body.classList.add(options.bodyClass);
-        } else {
-          body.className += ' ' + options.bodyClass;
-        }
+        _add_class(body, options.bodyClass);
+        _add_class(cookieButton, options.buttonClass);
       }
     };
     var _addEventListener = function (el, eventName, handler) {

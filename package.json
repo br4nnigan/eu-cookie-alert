@@ -1,6 +1,6 @@
 {
   "name": "EU-Cookie-Alert",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Drop in solution for EU cookie alert",
   "main": "eu-cookie-alert.js",
   "repository": {

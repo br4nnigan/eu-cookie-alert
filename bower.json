@@ -1,7 +1,7 @@
 {
   "name": "eu-cookie-alert",
   "main": "src/eu-cookie-alert.js",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "homepage": "https://github.com/agilepixel/eu-cookie-alert",
   "authors": [
     "Richard Brown <richard@agilepixel.io>"
@@ -17,7 +17,7 @@
     "node_modules"
   ],
   "devDependencies": {
-    "qunit": "~1.16.0",
+    "qunit": "~1.18.0",
     "blanket": "~1.1.0"
   }
 }

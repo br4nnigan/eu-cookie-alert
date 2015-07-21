@@ -19,12 +19,13 @@ Load the script alongside any other javascript libraries you may be using, and t
 Alternatively use the syntax:
 
     euCookieAlert.show({
-    bodyClass: 'eu-cookie-alert',
-    cookieKey: 'eucookiealert',
-    cookieValue: 1,
-    alertId: 'eucookiealert',
-    alertMessage: 'This website uses cookies. Please read our privacy policy for more information.',
-    agreeMessage: 'I understand'
+      bodyClass: 'eu-cookie-alert',
+      buttonClass: 'eu-cookie-button',
+      cookieKey: 'eucookiealert',
+      cookieValue: 1,
+      alertId: 'eucookiealert',
+      alertMessage: 'This website uses cookies. Please read our privacy policy for more information.',
+      agreeMessage: 'I understand'
     });
 
 To amend the alert to your own preference
