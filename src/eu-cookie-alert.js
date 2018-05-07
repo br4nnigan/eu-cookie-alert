@@ -75,7 +75,7 @@
         });
         cookieAlert.appendChild(cookieMessage);
         cookieMessage.appendChild(cookieButton);
-        parent.appendChild(cookieAlert);
+        options.parent.appendChild(cookieAlert);
         _add_class(body, options.bodyClass);
         _add_class(cookieButton, options.buttonClass);
       }
