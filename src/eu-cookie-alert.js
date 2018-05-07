@@ -13,6 +13,7 @@
     var defaultOptions = {
       bodyClass: 'eu-cookie-alert',
       buttonClass: 'eu-cookie-button',
+      parent: document.body,
       cookieKey: 'eucookiealert',
       cookieValue: 1,
       alertId: 'eucookiealert',
@@ -74,7 +75,7 @@
         });
         cookieAlert.appendChild(cookieMessage);
         cookieMessage.appendChild(cookieButton);
-        body.appendChild(cookieAlert);
+        parent.appendChild(cookieAlert);
         _add_class(body, options.bodyClass);
         _add_class(cookieButton, options.buttonClass);
       }
